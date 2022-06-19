@@ -18,9 +18,11 @@ object Depends {
         const val navigationFragmentKtx =
             "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
         const val navigationUiKtx = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
-
-
         const val constraint = "androidx.constraintlayout:constraintlayout:${Versions.constraint}"
+
+        /** https://github.com/google/dagger */
+        const val hiltAndroid = "com.google.dagger:hilt-android:${Versions.hilt}"
+        const val hiltCompiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
     }
 
     object testAndroid {

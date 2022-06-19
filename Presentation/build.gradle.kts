@@ -2,7 +2,7 @@ plugins {
     plugins(
         Config.Plugins.androidLibrary,
         Config.Plugins.kotlinAndroid,
-        //Config.Plugins.daggerHiltPlugin,
+        Config.Plugins.daggerHiltPlugin,
         Config.Plugins.kotlinNavigation,
         Config.Plugins.Kapt,
     )
@@ -44,6 +44,12 @@ dependencies {
         Depends.Android.supportAppCompat,
         Depends.Android.constraint,
         Depends.Android.navigationFragmentKtx,
-        Depends.Android.navigationUiKtx
+        Depends.Android.navigationUiKtx,
+        Depends.Android.hiltAndroid
+    )
+
+    kapts(
+        Depends.Android.hiltCompiler,
+        Depends.Android.androidXHiltCompiler
     )
 }
