@@ -3,6 +3,6 @@
 
     <style name="ConstraintLayout" parent="">
         <item name="android:background">@android:color/white</item>
-        <item name="android:layout_margin">@dimen/margin_16</item>
+        <item name="android:padding">@dimen/margin_16</item>
     </style>
 </resources>

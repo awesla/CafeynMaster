@@ -21,4 +21,17 @@ dependencies {
         ":Domain",
         ":Network",
     )
+
+    implementations(
+        Depends.Android.retrofit,
+        Depends.Android.retrofitGson,
+        Depends.Android.kotlinStdLib,
+        Depends.Android.hiltAndroid,
+        Depends.Android.coroutinesCore
+    )
+
+    kapts(
+        Depends.Android.hiltCompiler,
+        Depends.Android.androidXHiltCompiler
+    )
 }

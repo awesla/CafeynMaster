@@ -16,5 +16,8 @@ object Versions {
     const val androidXHilt = "1.0.0"
     const val navigation = "2.4.2"
     const val constraint = "2.1.4"
+    const val retrofit = "2.9.0"
+    const val okHttp = "4.10.0"
+    const val coroutines = "1.6.0"
 
 }

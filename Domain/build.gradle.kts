@@ -16,4 +16,15 @@ android {
 }
 
 dependencies {
+    implementations(
+        Depends.Android.kotlinStdLib,
+        Depends.Android.retrofitGson,
+        Depends.Android.hiltAndroid,
+        Depends.Android.coroutinesCore,
+        Depends.Android.coroutinesAndroid
+    )
+
+    kapts(
+        Depends.Android.hiltCompiler,
+    )
 }

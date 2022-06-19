@@ -2,7 +2,7 @@ plugins {
     plugins(
         Config.Plugins.androidApplication,
         Config.Plugins.kotlinAndroid,
-        //Config.Plugins.daggerHiltPlugin,
+        Config.Plugins.daggerHiltPlugin,
         Config.Plugins.Kapt
     )
 }
@@ -57,5 +57,14 @@ dependencies {
 
     implementationProjects(
         ":Presentation"
+    )
+
+    implementations(
+        Depends.Android.hiltAndroid
+    )
+
+    kapts(
+        Depends.Android.hiltCompiler,
+        Depends.Android.androidXHiltCompiler
     )
 }
