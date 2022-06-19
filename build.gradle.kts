@@ -6,7 +6,7 @@ buildscript {
     dependencies {
         classpath(Depends.Plugins.androidGradlePlugin)
         classpath(Depends.Plugins.kotlinGradlePlugin)
-        //classpath(Depends.Plugins.hiltGradlePlugin)
+        classpath(Depends.Plugins.hiltGradlePlugin)
         classpath(Depends.Plugins.navigationGradlePlugin)
     }
 }

@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Cafeyn Master</string>
+
+    <string name="no_news_available">Aucun article disponible</string>
+    <string name="error_message">Une erreur s\'est produite, veuillez réessayer plus tard.</string>
+    <string name="text_error">Erreur</string>
+    <string name="text_Ok">Ok</string>
 </resources>

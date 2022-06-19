@@ -14,4 +14,8 @@ android{
 }
 
 dependencies {
+    implementations(
+        Depends.Android.constraint,
+        Depends.Android.navigationUiKtx
+    )
 }

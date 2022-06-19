@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/mynewsfragment">
+
+    <fragment
+        android:id="@+id/mynewsfragment"
+        android:name="com.cafeyn.presentation.ui.news.listing.MyNewsFragment"
+        android:label="my_news_fragment"
+        tools:layout="@layout/my_news_fragment">
+        <action
+            android:id="@+id/action_newslistfragment_to_newsinfofragment"
+            app:destination="@+id/newsinfofragment" />
+    </fragment>
+</navigation>
