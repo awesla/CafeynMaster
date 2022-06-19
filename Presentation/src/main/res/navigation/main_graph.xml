@@ -14,4 +14,14 @@
             android:id="@+id/action_newslistfragment_to_newsinfofragment"
             app:destination="@+id/newsinfofragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/newsinfofragment"
+        android:name="com.cafeyn.presentation.ui.news.details.NewsInfoFragment"
+        android:label="news_info_fragment"
+        tools:layout="@layout/news_info_fragment">
+        <argument
+            android:name="newsInfo"
+            app:argType="com.cafeyn.domain.models.MyNews" />
+    </fragment>
 </navigation>

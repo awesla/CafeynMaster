@@ -1,6 +1,5 @@
 package com.cafeyn.presentation.ui.news.listing
 
-import android.content.Context
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
@@ -10,14 +9,12 @@ import com.cafeyn.domain.FetchMyNewsUseCase
 import com.cafeyn.domain.ValidateNewsDataUseCase
 import com.cafeyn.domain.models.MyNews
 import dagger.hilt.android.lifecycle.HiltViewModel
-import dagger.hilt.android.qualifiers.ApplicationContext
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 
 @HiltViewModel
 class MyNewsViewModel @Inject constructor(
-    @ApplicationContext val context: Context,
     private val fetchMyNewsUseCase: FetchMyNewsUseCase,
     private val validateNewsDataUseCase: ValidateNewsDataUseCase
 ) : ViewModel() {

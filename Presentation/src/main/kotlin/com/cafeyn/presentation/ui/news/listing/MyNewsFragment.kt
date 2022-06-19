@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AlertDialog
 import androidx.fragment.app.viewModels
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.cafeyn.core.misc.EmptySuccess
 import com.cafeyn.core.misc.Failure
@@ -40,7 +41,9 @@ class MyNewsFragment : BaseFragment<MyNewsFragmentBinding>(
 
         allNewsAdapter.apply {
             itemClickListener = {
-
+                findNavController().navigate(
+                    MyNewsFragmentDirections.actionNewslistfragmentToNewsinfofragment(it)
+                )
             }
         }
 
