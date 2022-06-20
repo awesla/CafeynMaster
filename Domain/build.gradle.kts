@@ -27,4 +27,12 @@ dependencies {
     kapts(
         Depends.Android.hiltCompiler,
     )
+
+    testImplementations(
+        Depends.testAndroid.junitTest,
+        Depends.testAndroid.kotlinTest,
+        Depends.testAndroid.mockk,
+        Depends.testAndroid.mockkAgentJvm,
+        Depends.testAndroid.kotlinCoroutineTest
+    )
 }

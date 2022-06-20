@@ -49,5 +49,14 @@ object Depends {
     }
 
     object testAndroid {
+        /** https://github.com/junit-team/junit4 */
+        const val junitTest = "junit:junit:${Versions.junit}"
+        const val kotlinTest = "org.jetbrains.kotlin:kotlin-test-junit:${Versions.kotlin}"
+
+        /** https://mockk.io */
+        const val mockk = "io.mockk:mockk:${Versions.mockk}"
+        const val mockkAgentJvm = "io.mockk:mockk-agent-jvm:${Versions.mockk}"
+
+        const val kotlinCoroutineTest = "org.jetbrains.kotlinx:kotlinx-coroutines-test:${Versions.coroutineTest}"
     }
 }

@@ -21,5 +21,8 @@ object Versions {
     const val coroutines = "1.6.0"
     const val room = "2.4.2"
     const val coil = "2.1.0"
+    const val junit = "4.12"
+    const val mockk = "1.12.4"
+    const val coroutineTest = "1.6.2"
 
 }
