@@ -15,17 +15,10 @@ class NewsInfoFragment : BaseFragment<NewsInfoFragmentBinding>(
     override fun afterOnViewCreated(view: View, savedInstanceState: Bundle?) {
         super.afterOnViewCreated(view, savedInstanceState)
         fillView()
-        initListener()
     }
 
     private fun fillView() {
         mBinding.picture.load(arguments.newsInfo.url)
         mBinding.textTitle.text = arguments.newsInfo.title
-    }
-
-    private fun initListener() {
-        mBinding.imageViewBack.setOnClickListener {
-            activity?.onBackPressed()
-        }
     }
 }
