@@ -3,6 +3,7 @@ package com.cafeyn.presentation.ui.news.details
 import android.os.Bundle
 import android.view.View
 import androidx.navigation.fragment.navArgs
+import coil.load
 import com.cafeyn.presentation.databinding.NewsInfoFragmentBinding
 import com.cafeyn.presentation.ui.coreview.BaseFragment
 
@@ -18,7 +19,7 @@ class NewsInfoFragment : BaseFragment<NewsInfoFragmentBinding>(
     }
 
     private fun fillView() {
-        mBinding.pictureImageView.loadUrl(arguments.newsInfo.url)
+        mBinding.picture.load(arguments.newsInfo.url)
         mBinding.textTitle.text = arguments.newsInfo.title
     }
 

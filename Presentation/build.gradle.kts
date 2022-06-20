@@ -45,7 +45,8 @@ dependencies {
         Depends.Android.constraint,
         Depends.Android.navigationFragmentKtx,
         Depends.Android.navigationUiKtx,
-        Depends.Android.hiltAndroid
+        Depends.Android.hiltAndroid,
+        Depends.Android.coilKt
     )
 
     kapts(

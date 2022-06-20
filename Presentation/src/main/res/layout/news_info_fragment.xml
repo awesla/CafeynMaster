@@ -11,8 +11,8 @@
         android:layout_height="wrap_content"
         style="@style/ConstraintLayout">
 
-        <WebView
-            android:id="@+id/pictureImageView"
+        <ImageView
+            android:id="@+id/picture"
             android:layout_width="0dp"
             android:layout_height="250dp"
             android:scaleType="fitCenter"
@@ -38,7 +38,7 @@
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/pictureImageView"
+            app:layout_constraintTop_toBottomOf="@id/picture"
             tools:text="This is the title" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>

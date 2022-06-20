@@ -12,15 +12,14 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
-
 @HiltViewModel
 class MyNewsViewModel @Inject constructor(
     private val fetchMyNewsUseCase: FetchMyNewsUseCase,
     private val validateNewsDataUseCase: ValidateNewsDataUseCase
 ) : ViewModel() {
 
-    private val _myNews = MutableLiveData<DataWrapper<List<MyNews>?>>()
-    val myNews: MutableLiveData<DataWrapper<List<MyNews>?>> get() = _myNews
+    private val _myNews = MutableLiveData<DataWrapper<List<MyNews>>>()
+    val myNews: MutableLiveData<DataWrapper<List<MyNews>>> get() = _myNews
 
     fun fetchData() {
         _myNews.setLoadingState(true)

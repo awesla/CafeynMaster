@@ -39,6 +39,13 @@ object Depends {
             "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
         const val coroutinesAndroid =
             "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+
+        /** https://developer.android.com/jetpack/androidx/releases/room */
+        const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
+        const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
+
+        /** https://coil-kt.github.io/coil/ */
+        const val coilKt = "io.coil-kt:coil:${Versions.coil}"
     }
 
     object testAndroid {
