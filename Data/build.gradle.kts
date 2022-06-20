@@ -36,4 +36,12 @@ dependencies {
         Depends.Android.androidXHiltCompiler,
         Depends.Android.roomCompiler
     )
+
+    testImplementations(
+        Depends.testAndroid.junitTest,
+        Depends.testAndroid.kotlinTest,
+        Depends.testAndroid.mockk,
+        Depends.testAndroid.mockkAgentJvm,
+        Depends.testAndroid.kotlinCoroutineTest
+    )
 }

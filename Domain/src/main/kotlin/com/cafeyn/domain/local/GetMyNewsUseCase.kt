@@ -7,5 +7,4 @@ class GetMyNewsUseCase @Inject constructor(
     private val myNewsCacheRepository: MyNewsCacheRepository
 ) {
     suspend operator fun invoke(): List<MyNews> = myNewsCacheRepository.getMyNews()
-
 }
