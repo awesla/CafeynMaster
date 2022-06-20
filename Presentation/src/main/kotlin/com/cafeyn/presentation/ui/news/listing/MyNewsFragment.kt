@@ -15,7 +15,6 @@ import com.cafeyn.presentation.databinding.MyNewsFragmentBinding
 import com.cafeyn.presentation.ui.coreview.BaseFragment
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class MyNewsFragment : BaseFragment<MyNewsFragmentBinding>(
     MyNewsFragmentBinding::inflate
@@ -23,7 +22,6 @@ class MyNewsFragment : BaseFragment<MyNewsFragmentBinding>(
 
     private val myNewsViewModel: MyNewsViewModel by viewModels()
     private val allNewsAdapter by lazy { MyNewsAdapter() }
-
 
     override fun afterOnViewCreated(view: View, savedInstanceState: Bundle?) {
         super.afterOnViewCreated(view, savedInstanceState)
@@ -51,6 +49,7 @@ class MyNewsFragment : BaseFragment<MyNewsFragmentBinding>(
     }
 
     private fun observeData() {
+
         myNewsViewModel.myNews.observe(viewLifecycleOwner) {
             when (it) {
                 is EmptySuccess -> mBinding.textNoItem.visibility = View.VISIBLE

@@ -27,11 +27,13 @@ dependencies {
         Depends.Android.retrofitGson,
         Depends.Android.kotlinStdLib,
         Depends.Android.hiltAndroid,
-        Depends.Android.coroutinesCore
+        Depends.Android.coroutinesCore,
+        Depends.Android.roomKtx
     )
 
     kapts(
         Depends.Android.hiltCompiler,
-        Depends.Android.androidXHiltCompiler
+        Depends.Android.androidXHiltCompiler,
+        Depends.Android.roomCompiler
     )
 }

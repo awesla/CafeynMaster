@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import coil.load
 import com.cafeyn.domain.models.MyNews
 import com.cafeyn.presentation.databinding.ItemNewsBinding
 
@@ -41,7 +42,7 @@ internal class MyNewsAdapter :
         ) {
 
             with(itemNewsBinding) {
-                pictureImageView.loadUrl(newsInfo.thumbnailUrl)
+                picture.load(newsInfo.thumbnailUrl)
                 textTitle.text = newsInfo.title
 
                 itemView.setOnClickListener { itemClickListener?.invoke(newsInfo) }

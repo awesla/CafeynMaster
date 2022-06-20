@@ -19,6 +19,7 @@ dependencies {
     implementations(
         Depends.Android.kotlinStdLib,
         Depends.Android.hiltAndroid,
+        Depends.Android.coroutinesCore
     )
 
     kapts(
